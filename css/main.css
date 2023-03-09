@@ -17,21 +17,20 @@ a {
   padding: 8px;
 }
 ul {
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #dddddd;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
 }
 li a {
-  display: block;
   color: white;
-  text-align: center;
+  display: block;
   padding: 14px 16px;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -47,8 +46,8 @@ li a:hover {
 .main{
     font-family: cursive;
     height: auto;
-    margin-top:46px;
     margin: 1rem;
+    margin-top:46px;
     text-align: center;
     width: auto;
 }
