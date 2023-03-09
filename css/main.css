@@ -3,6 +3,10 @@
     padding:0;
 }
 
+.header{
+    height:46px;
+}
+
 li {
   float: left;
 }
@@ -37,4 +41,13 @@ li a:hover {
 
 .about {
   background-color: forestgreen; /*04AA6D*/
+}
+
+.main{
+    font-family: cursive;
+    height: auto;
+    margin-top:46px;
+    margin: 1rem;
+    text-align: center;
+    width: auto;
 }

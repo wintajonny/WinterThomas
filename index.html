@@ -6,15 +6,15 @@
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <div id="header">
-            <ul>
+        <div id="header" class="header">
+            <ul class="header">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li style="float:right"><a class="about" href="#about">About</a></li>
             </ul> 
         </div>
-        <div id="main">
+        <div id="main" class="main">
             <h2>Thomas Winter</h2>
             <div class="socials">
                 <p>Welcome to my site... <br/> here you can see some of my stuff :)</p>
@@ -30,9 +30,41 @@
                 
             </div>
             
-            <div class="contentSlider">
+            <div class="slider">
+                <div class="contentSlider">
+                    <div class="contentSlider-Content">
+                        <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                        <p>
+                        test1
+                        </p>
+                    </div>
+
+                    <div class="contentSlider-Content">
+                        <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                        <p class="author">- Ernest Hemingway</p>
+                    </div>
+
+                    <div class="contentSlider-Content">
+
+                        <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                        <p class="author">- Thomas A. Edison</p>
+                    </div>
+                
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             
+                <div class="dot-container">
+                    
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
             </div>
         </div>
     </body>
+    
+            <script src="js/index.js"></script>
+
 </html>

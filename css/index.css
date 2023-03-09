@@ -16,17 +16,8 @@
     }
 }
 
-#main{
-    margin-top:46px;
-    padding: 1rem;
-    height: auto;
-    width: 100%;
-    text-align: center;
-    font-family: cursive;
-}
-
 .socials{
-    padding: inherit;
+    padding: 1rem;
 }
 
 .socials p {
@@ -42,13 +33,72 @@ img:hover{
 }
 
 .socials a {
+    display: inline-flex;
     height: auto;
     width: auto;
-    display: contents;
+}
+
+/* Content Slider */
+.slider{
+    padding:10px;
 }
 
 .contentSlider{
+    background-color:#f1f1f1;
+    height:auto;
+    position:relative;
     width:auto;
-    height:100px;
-    background-color:skyblue;
+}
+
+.contentSlider-Content{
+    display:none;
+    padding:80px;
+    text-align: center;
+}
+
+.prev, .next {
+    border-radius: 0 3px 3px 0;
+    color: #888;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -30px;
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    user-select: none;
+    width: auto;
+}
+
+.next {
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: black;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.dot-container {
+    background: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.dot {
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 15px;
+  margin: 0 2px;
+  transition: background-color 0.6s ease;
+  width: 15px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
 }
